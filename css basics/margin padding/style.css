@@ -1,0 +1,33 @@
+* {
+	box-sizing : border-box ;
+}
+.box{
+	display: inline-block;
+	width : 33%;
+	height : 200px ;
+	border : 1px dashed red;
+	padding : 10px ;
+	margin:10px;
+}
+
+.small-box{
+	width : calc(33% - 20px) ;  /*for doing calculation in different units use calc*/
+	padding : 5% ;
+}
+
+/*margins and paddings must be specified in percentages in responsve designs , because 
+it is taking the percentage of parent */ 
+
+
+/*position property
+
+non-static positions (they can move)
+relative - origin is current position of block itself , it will move from it's current position
+
+absolute - they will move wrt to nearest non-static element  . They are also used to provide layering(e.g in dropdown of navbar)
+if none of the parent is non-static , it will move wrt browsers window .
+
+static positions (they can't move)
+static - ( by default ) , it will not move by top ,left ,right , bottom 
+
+fixed - it fixes the position of element*/

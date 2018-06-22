@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Semantic elements</title>
+</head>
+<body>
+
+		<!--  Basic semantic elements
+		 <h1></h1>
+		 <h2></h2>
+		 <h3></h3>
+		 <h4></h4>
+		 <h5></h5>
+		 <h6></h6> -->
+
+		<header>
+			<nav>
+				<!-- unordered list -->
+				<!-- ul type can be square , disc(default) , circle  -->
+				<ul type="square">
+					<li>link1</li>
+					<li>link2</li>
+					<li>link3</li>
+					<li>link4</li>
+				</ul>
+
+		        <!-- ordered list -->
+		        <!--  ol type can be A , a , i , I e.t.c  -->
+				<ol type="I" start="2">
+					<li>first</li>
+					<li>second</li>
+					<li>third</li>
+				</ol>
+		        
+		        <!-- defination list -->
+				<dl>
+					<dt>Firefox</dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+				</dl>
+			</nav>
+		</header>
+		<!-- sections seperates the one kind of blocks to other kind of blocks , i.e they are used for isolation for better SEO  
+		 divs are not isolated containers -->
+		 <main>
+		 	 <section>
+			 	<article><p>
+			 		<strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			 	</p></article>
+		     </section>
+
+			 <section>
+			 	<p><em>Lorem ipsum</em> dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			 </section>
+
+		 </main>
+
+
+		 <footer>
+
+		 	<h5> I am footer </h5>
+		 	<!-- this is the only semantic element which adds a property - it italicizes the text -->
+		 	<address>Coding blocks Noida</address>
+
+		 </footer>
+
+</body>
+</html>
+
+
+<!-- note : never use <br> tags for having a gap b/w separate two lines , instead use <p> tags  -->

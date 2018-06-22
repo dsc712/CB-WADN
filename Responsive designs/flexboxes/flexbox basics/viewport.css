@@ -1,0 +1,52 @@
+.container{
+ display : flex ;
+ flex-wrap : wrap ;
+ margin : 100px 100px ;
+}
+
+.box{
+	width : 50%;
+	height : 100px ;
+}
+
+.box1{
+	width : 100%;
+	background-color : red ;
+}
+
+.box2{
+	background-color : yellow;
+}
+
+.box3{
+	background-color : green;
+}
+.box4{
+	background-color : blue;
+}
+.box5{
+	background-color : black;
+}
+.box6{
+	background-color : gold;
+}
+.box7{
+	background-color : red;
+}
+.box8{
+	background-color : yellow;
+} 
+.box9{
+	background-color : blue ;
+}
+
+@media screen and (max-width : 720px){
+	.container{
+		margin : 0px 0px;
+	}
+}
+@media screen and (max-width : 480px ){
+	.box{
+		width : 100% ;
+	}
+}

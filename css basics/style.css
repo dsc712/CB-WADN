@@ -1,0 +1,31 @@
+p{
+	color : green ;
+}
+
+body{
+	font-size: 26px;
+}
+
+#special{
+	color : orange ;
+    
+}
+
+.not_special{
+	color : blue ;
+}
+
+.main{   /*less specific*/
+  color : red ;
+  font-weight : bold;
+}
+
+.main.specific{   /*more specific*/
+  color : #fff ;
+}
+
+/*properties of parent automatically inherited to it's child tags*/
+
+.main.specific p{
+	color : black ;
+}

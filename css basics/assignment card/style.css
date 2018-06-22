@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body{
+	background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+	font-family : Raleway;
+}
+table{
+	margin : 0 auto ;
+	border : 1px solid #fff;
+	width : 100% ;
+
+}
+h1{
+	
+	border : 1px solid #fff ;
+	padding : 10px ;
+	color : #fff ;
+	border-radius : 3px ;
+}
+.image{
+	text-align: center ;
+    border : 3px solid #fff;
+    border-bottom: none ;
+    background-image: linear-gradient(to right top, #9d3466, #9a2b58, #96224b, #91193d, #8b1030);
+}
+.card{
+	margin : 0 auto ;
+	border : 10px solid #fff;
+	width : 360px ;
+	border-radius : 5px ; 
+}
+.information {
+	background-image: linear-gradient(to right top, #1c5cbc, #0e73ca, #1f8ad5, #3ca0de, #5bb5e5);
+	color : #fff ;
+}
+.information tr th{
+   margin-top : 15px ;
+   padding-bottom: 20px ;
+   padding-top: 20px ;
+   border-top : 1px solid #fff ;
+   border-bottom: 1px solid #fff;
+   background: #060f75 ;
+   width : 100% ;
+}
+#first_heading {
+	border-top: none ;
+}
+#kohli{
+	height : 100%;
+	width : 100% ;
+}
