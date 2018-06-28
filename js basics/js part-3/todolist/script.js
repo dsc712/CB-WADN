@@ -1,4 +1,5 @@
 window.onload = function(){
+
     let button = document.getElementById("btn") ;
     let input = document.getElementById("inp") ;
     let output = document.getElementById("result") ;
@@ -22,7 +23,7 @@ window.onload = function(){
 
 // push()  - it adds the element at end
 // slice(begin , end )  -  it deletes the element and return a new array  [begin , end)
-//splice(begin , end , newitem1 , newitem2 .... )  - it can add as well as delete element and it
+//splice(begin , end , new item1 , new item2 .... )  - it can add as well as delete element and it
 // performs operations on original array instead of returning new array with modification
 
 
@@ -30,4 +31,5 @@ window.onload = function(){
 
 // add a function update
 // add a function delete
+// replace innerHTML with optimized approach
 // add markAsDone ( optional )
