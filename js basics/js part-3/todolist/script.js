@@ -30,4 +30,5 @@ window.onload = function(){
 
 // add a function update
 // add a function delete
+// replace innerHTML with optimized approach
 // add markAsDone ( optional )
