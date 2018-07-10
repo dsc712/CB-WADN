@@ -2,49 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b60df3e-457a-4352-89f3-f19816e11713" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/body-parser/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/body-parser/HISTORY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/body-parser/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/body-parser/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/body-parser/lib/types/json.js" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/body-parser/lib/types/json.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/body-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/body-parser/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/Changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/Changelog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/encodings/dbcs-codec.js" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/encodings/dbcs-codec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/encodings/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/encodings/internal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/encodings/sbcs-codec.js" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/encodings/sbcs-codec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/encodings/utf16.js" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/encodings/utf16.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/encodings/utf7.js" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/encodings/utf7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/lib/extend-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/lib/extend-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/lib/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/iconv-lite/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/HISTORY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/depd/History.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/depd/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/depd/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/depd/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/depd/lib/browser/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/depd/lib/compat/callsite-tostring.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/depd/lib/compat/event-listener-count.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/depd/lib/compat/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/depd/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/http-errors/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/http-errors/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/http-errors/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/http-errors/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/http-errors/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/setprototypeof/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/setprototypeof/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/setprototypeof/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/node_modules/setprototypeof/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/node_modules/raw-body/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/public/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/public/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodelecture/todolist/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/nodelecture/todolist/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,11 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodelecture/todolist/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+              <caret column="34" selection-start-column="34" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -70,8 +38,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodelecture/todolist/public/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state relative-caret-position="527">
+              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -102,6 +70,7 @@
         <option value="$PROJECT_DIR$/nodelecture/thirdproject/public/index.html" />
         <option value="$PROJECT_DIR$/nodelecture/todolist/public/script.js" />
         <option value="$PROJECT_DIR$/nodelecture/todolist/server.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -112,12 +81,14 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/nodelecture/fourthproject/node_modules" />
     <handled-path value="$PROJECT_DIR$/nodelecture/thirdproject/node_modules" />
     <handled-path value="$PROJECT_DIR$/nodelecture/todolist/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/nodelecture/firstproject/package.json" />
+      <path value="$PROJECT_DIR$/nodelecture/fourthproject/package.json" />
       <path value="$PROJECT_DIR$/nodelecture/thirdproject/package.json" />
       <path value="$PROJECT_DIR$/nodelecture/todolist/package.json" />
     </packageJsonPaths>
@@ -133,7 +104,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,6 +126,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,11 +170,12 @@
       <workItem from="1531102297161" duration="69000" />
       <workItem from="1531107178680" duration="8054000" />
       <workItem from="1531178190523" duration="5719000" />
+      <workItem from="1531186394289" duration="833000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28782000" />
+    <option name="totallyTimeSpent" value="29615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -235,6 +207,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/nodelecture/todolist/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodelecture/todolist/public/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nodelecture/todolist/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -399,15 +385,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nodelecture/todolist/public/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state relative-caret-position="527">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nodelecture/todolist/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
         </state>
       </provider>
     </entry>
