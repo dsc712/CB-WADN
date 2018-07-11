@@ -53,8 +53,6 @@ app.post('/update' , function(req , res){
     let i = req.body.position ;
     let item = req.body.val ;
     todoListserver[i] = item ;
-    console.log(item) ;
-    console.log(todoListserver) ;
     res.sendStatus(200) ;
 
 }) ;
@@ -73,4 +71,3 @@ app.listen(PORT, function(){
     console.log("Server running on Port " + PORT);
 
 }) ;
-
