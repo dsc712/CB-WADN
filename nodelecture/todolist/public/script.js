@@ -1,5 +1,6 @@
 
 function display() {
+
   $.ajax({
       url : '/display' ,
       method : 'GET' ,
@@ -10,7 +11,9 @@ function display() {
           }
       }
   }) ;
+
 }
+
 
 $(document).ready( function(){
 
@@ -28,7 +31,7 @@ $(document).ready( function(){
      function abcd(){
          $.ajax ( {
              url: '/add',
-             method: 'GET',
+             method: 'POST',
              data: {todo : input.value  } ,
              success: function(data) {
                  console.log(data);
@@ -42,6 +45,7 @@ $(document).ready( function(){
 
 
 }) ;
+
 
 
 // create a new todo_item
@@ -104,6 +108,7 @@ function del(btn) {
     console.log( $(btn).parent().index() ) ;
     $.ajax({
         url : '/delete' ,
+        method : 'POST' ,
         data : {index : $(btn).parent().index() }  ,
         success : function (data) {
             $(btn).parent().remove() ;
@@ -120,7 +125,7 @@ function check(todo) {
 
             $.ajax({
                 url : '/check' ,
-                method : 'GET' ,
+                method : 'POST' ,
                 data : {
                          val : todo.value ,
                          index : $(todo).index()
@@ -176,7 +181,7 @@ function update(btn) {
 
     $.ajax({
         url : '/update' ,
-        method : 'GET' ,
+        method : 'POST' ,
         data : {
             position  : $(li).index()  ,
             val : newValue

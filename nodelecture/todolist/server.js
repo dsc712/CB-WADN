@@ -50,6 +50,8 @@ app.get('/update' , function(req , res){
     let i = req.query.position ;
     let item = req.query.val ;
     todoListserver[i] = item ;
+    console.log(item) ;
+    console.log(todoListserver) ;
     res.sendStatus(200) ;
 
 }) ;
