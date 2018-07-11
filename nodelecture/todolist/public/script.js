@@ -1,16 +1,37 @@
+let todolist = [] ;
+let statusarray = [] ;
 
 function display() {
 
-  $.ajax({
-      url : '/display' ,
-      method : 'GET' ,
-      success : function(data){
-          console.log(data) ;
-          for(let i = 0 ; i < data.todoListserver.length ; i++ ){
-              createTodo(data.todoListserver[i], data.status[i] ) ;
-          }
-      }
-  }) ;
+       let data = JSON.parse(localStorage.getItem('todolist'))  || [] ;
+       let data1 = JSON.parse(localStorage.getItem('statusarray') ) || [] ;
+
+       todolist = data ;
+       statusarray = data1 ;
+
+        if(data.length ){
+
+            for(let i = 0 ; i < todolist.length ; i++ ){
+                 createTodo(todolist[i] , statusarray[i] , false ) ;
+            }
+
+        }else{
+            $.ajax({
+                url : '/display' ,
+                method : 'GET' ,
+                success : function(data){
+                    console.log(data) ;
+
+                    // getting array on server in our static file array
+                    todolist = data.todoListserver ;
+                    status = data.status ;
+
+                    for(let i = 0 ; i < data.todoListserver.length ; i++ ){
+                        createTodo(data.todoListserver[i], data.status[i] , false ) ;
+                    }
+                }
+            }) ;
+        }
 
 }
 
@@ -19,13 +40,9 @@ $(document).ready( function(){
 
     let button = document.getElementById("btn");
     let input = document.getElementById("inp");
+
+
     display() ;
-
-
-    //For checking if a string is blank, null or undefined
-    String.prototype.isEmpty = function () {
-        return (this.length === 0 || !this.trim());
-    };
 
     button.onclick = abcd;
      function abcd(){
@@ -36,7 +53,7 @@ $(document).ready( function(){
              success: function(data) {
                  console.log(data);
                  // append todo
-                 createTodo(data , 0 ) ;
+                 createTodo(data , 0 , true ) ;
              }
          }) ;
 
@@ -48,10 +65,15 @@ $(document).ready( function(){
 
 
 
-// create a new todo_item
-function createTodo(value , status ) {
+// create a new todo_item  -- logic for rendering the page (specially appending the todoitems in todolist )
+function createTodo(value , status , isNew ) {
 
     let output = document.getElementById("result");
+
+    //For checking if a string is blank, null or undefined
+    String.prototype.isEmpty = function () {
+        return (this.length === 0 || !this.trim());
+    };
 
     if (!value.isEmpty()) {
 
@@ -95,6 +117,17 @@ function createTodo(value , status ) {
 
         output.append(todo);
 
+        if(isNew){
+
+            todolist.push(value) ;
+            statusarray.push(0) ;
+
+            // modify the todolist and status array in localstorage
+            localStorage.setItem('todolist' , JSON.stringify(todolist)) ;
+            localStorage.setItem('statusarray' , JSON.stringify(statusarray)) ;
+
+        }
+
     }else{
         alert("empty todos can't be created , try typing your todo , then click this button ") ;
     }
@@ -111,10 +144,19 @@ function del(btn) {
         method : 'POST' ,
         data : {index : $(btn).parent().index() }  ,
         success : function (data) {
+
+            // modify the local storage if item deleted successfully
+            todolist.splice($(btn).parent().index() , 1) ;
+            statusarray.splice($(btn).parent().index() , 1 ) ;
+            localStorage.setItem('todolist' , JSON.stringify(todolist)) ;
+            localStorage.setItem('statusarray' , JSON.stringify(statusarray)) ;
+
+
             $(btn).parent().remove() ;
         }
 
     }) ;
+
 
 
 }
@@ -131,11 +173,23 @@ function check(todo) {
                          index : $(todo).index()
                         }  ,
                 success : function(){
+                    if(todo.value == 0){
+                        statusarray[$(todo).index()] = 1 ;
+                    }else if(todo.value == 1){
+                        statusarray[$(todo).index() ] = 0 ;
+                    }else{
+                        console.log("unexpected value of status ... ") ;
+                    }
+
+                    // modify the localstorage status array
+                    localStorage.setItem('statusarray' , JSON.stringify(statusarray)) ;
+
                     todo.classList.toggle("done") ;
                     console.log("todo completed ") ;
                 }
 
             }) ;
+
 }
 
 
@@ -188,6 +242,10 @@ function update(btn) {
              } ,
         success : function(){
              console.log("todolist updated successfully ") ;
+             todolist[$(li).index()] = newValue ;
+
+             // modify the local storage todolist array
+             localStorage.setItem('todolist' , JSON.stringify(todolist)) ;
         }
 
     }) ;

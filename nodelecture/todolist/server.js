@@ -1,5 +1,6 @@
 const server = require('express');
 const app = server();
+const bodyParser = require('body-parser') ;
 const PORT = process.env.PORT || 5000;
 
 
@@ -8,29 +9,31 @@ let todoListserver = [] ;
 let status = [] ;
 
 app.use('/', server.static('./public'));
+app.use( bodyParser.json() ) ;
+app.use( bodyParser.urlencoded({extended : true})) ;  // allows nested object in req.body
 
-app.get('/add', function(req,res) {
+app.post('/add', function(req,res) {
 
-    // Get the todoItem using req.query
-      console.log(req.query.todo) ;
+    // Get the todoItem using req.body.todo
+      console.log(req.body.todo) ;
 
     // Push In todoList ARRAY and status array
-       todoListserver.push( req.query.todo ) ;
+       todoListserver.push( req.body.todo ) ;
        status.push('false') ;
 
     // Response back => req.query
-        res.send( req.query.todo  ) ;
+        res.send( req.body.todo  ) ;
 });
 
 app.get('/display', function(req,res) {
 
-    // Send TodoList Array to the client
+    // Send TodoList Array and Status array to the client
     res.send( {todoListserver , status} ) ;
 })
 
-app.get('/check' , function(req , res){
-  let value = req.query.val ;
-  let index = req.query.index ;
+app.post('/check' , function(req , res){
+  let value = req.body.val ;
+  let index = req.body.index ;
 
   console.log(value) ;
   // toggle the state of todo.value
@@ -45,10 +48,10 @@ app.get('/check' , function(req , res){
 
 });
 
-app.get('/update' , function(req , res){
+app.post('/update' , function(req , res){
 
-    let i = req.query.position ;
-    let item = req.query.val ;
+    let i = req.body.position ;
+    let item = req.body.val ;
     todoListserver[i] = item ;
     console.log(item) ;
     console.log(todoListserver) ;
@@ -56,9 +59,9 @@ app.get('/update' , function(req , res){
 
 }) ;
 
-app.get('/delete' , function(req , res){
+app.post('/delete' , function(req , res){
 
-    let i = req.query.index ;
+    let i = req.body.index ;
     todoListserver.splice(i , 1 ) ;
     status.splice(i , 1 ) ;
     res.sendStatus(200) ;
@@ -70,3 +73,4 @@ app.listen(PORT, function(){
     console.log("Server running on Port " + PORT);
 
 }) ;
+
