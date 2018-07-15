@@ -1,13 +1,16 @@
 let todolist = [] ;
 let statusarray = [] ;
+let idarray = [] ;
 
 function display() {
 
        let data = JSON.parse(localStorage.getItem('todolist'))  || [] ;
        let data1 = JSON.parse(localStorage.getItem('statusarray') ) || [] ;
+       let data2 = JSON.parse(localStorage.getItem('idarray') ) || [] ;
 
        todolist = data ;
        statusarray = data1 ;
+       idarray = data2 ;
 
         if(data.length ){
 
@@ -16,19 +19,26 @@ function display() {
             }
 
         }else{
+
+            // ajax request to server , for fetching the todos from database
             $.ajax({
                 url : '/display' ,
                 method : 'GET' ,
                 success : function(data){
                     console.log(data) ;
+                    data.forEach(function(i){
+                        createTodo(i.name , i.status , false ) ;
+                        todolist.push(i.name) ;
+                        statusarray.push(i.status) ;
+                        idarray.push(i.id) ;
+                    }) ;
 
-                    // getting array on server in our static file array
-                    todolist = data.todoListserver ;
-                    status = data.status ;
-
-                    for(let i = 0 ; i < data.todoListserver.length ; i++ ){
-                        createTodo(data.todoListserver[i], data.status[i] , false ) ;
-                    }
+                    localStorage.setItem('todolist' , JSON.stringify(todolist)) ;
+                    localStorage.setItem('statusarray' , JSON.stringify(statusarray)) ;
+                    localStorage.setItem('idarray' , JSON.stringify(idarray) ) ;
+                    // for(let i = 0 ; i < data.todoListserver.length ; i++ ){
+                    //     createTodo(data.todoListserver[i], data.status[i] , false ) ;
+                    // }
                 }
             }) ;
         }
@@ -122,9 +132,17 @@ function createTodo(value , status , isNew ) {
             todolist.push(value) ;
             statusarray.push(0) ;
 
+            if(idarray.length){  // if idarray is not empty
+                idarray.push(idarray[idarray.length - 1] + 1 ) ;
+            }else{ // initially when idarray is empty
+                idarray.push(1) ;
+            }
+
+
             // modify the todolist and status array in localstorage
             localStorage.setItem('todolist' , JSON.stringify(todolist)) ;
             localStorage.setItem('statusarray' , JSON.stringify(statusarray)) ;
+            localStorage.setItem('idarray' , JSON.stringify(idarray) ) ;
 
         }
 
@@ -142,14 +160,17 @@ function del(btn) {
     $.ajax({
         url : '/delete' ,
         method : 'POST' ,
-        data : {index : $(btn).parent().index() }  ,
+        data : {index : idarray[$(btn).parent().index()]  }  ,
         success : function (data) {
 
             // modify the local storage if item deleted successfully
             todolist.splice($(btn).parent().index() , 1) ;
             statusarray.splice($(btn).parent().index() , 1 ) ;
+            idarray.splice($(btn).parent().index() , 1 ) ;
+
             localStorage.setItem('todolist' , JSON.stringify(todolist)) ;
             localStorage.setItem('statusarray' , JSON.stringify(statusarray)) ;
+            localStorage.setItem('idarray' , JSON.stringify(idarray)) ;
 
 
             $(btn).parent().remove() ;
@@ -170,7 +191,7 @@ function check(todo) {
                 method : 'POST' ,
                 data : {
                          val : todo.value ,
-                         index : $(todo).index()
+                         index : idarray[$(todo).index()]
                         }  ,
                 success : function(){
                     if(todo.value == 0){
@@ -237,7 +258,7 @@ function update(btn) {
         url : '/update' ,
         method : 'POST' ,
         data : {
-            position  : $(li).index()  ,
+            position  : idarray[$(li).index()]  ,
             val : newValue
              } ,
         success : function(){
