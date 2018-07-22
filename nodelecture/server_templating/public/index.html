@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="inp">
+<button id="btn">Get</button>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script>
+    // shortcut for document.ready in jQuery
+    $(function(){
+        let inp = $('#inp') ;
+        let btn = $('#btn') ;
+
+        btn.click(function(){
+            $.ajax({
+                url: '/data' ,
+                method : 'post' ,
+                data : {task: inp.val() } ,
+                success: function(data){
+                    window.location.href="/all" ;
+                }
+            })
+        })
+    });
+</script>
+</body>
+</html>
